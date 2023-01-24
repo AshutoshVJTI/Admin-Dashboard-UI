@@ -22,7 +22,6 @@ const Accordion = (props: AccordionProps) => {
       >
         {label}
       </Typo>
-      <div className="triangle-l" />
     </div>
   );
 };
