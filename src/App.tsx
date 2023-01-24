@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Header isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
       <Sidebar isOpen={isSidebarOpen} />
-      <Customer isOpen={isSidebarOpen}/>
+      <Customer isOpen={isSidebarOpen} />
     </div>
   );
 }

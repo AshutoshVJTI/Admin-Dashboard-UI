@@ -55,12 +55,12 @@ const BasicInfo = (props: BasicInfoProps) => {
         <div className="flex justify-between">
           <FormTextfield label="Address Line 1" isRequired />
           <FormTextfield label="Address Line 2" />
-          <FormTextfield label="City" isRequired hasSearchIcon/>
+          <FormTextfield label="City" isRequired hasSearchIcon />
         </div>
         <div className="flex justify-between">
           <FormTextfield label="Zipcode" isRequired />
-          <FormTextfield label="State" isRequired isDropdown/>
-          <FormTextfield label="Country" isRequired isDropdown/>
+          <FormTextfield label="State" isRequired isDropdown />
+          <FormTextfield label="Country" isRequired isDropdown />
         </div>
       </div>
       <div className="flex justify-end">

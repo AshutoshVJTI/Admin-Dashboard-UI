@@ -34,13 +34,21 @@ const Customer = (props: CustomerProps) => {
             {currentPage === "List" ? "Practice" : "Create Practice"}
           </Typo>
           {currentPage === "List" ? (
-            <Typo fontFamily="SF" className="text-md text-lighter-grey font-semibold">
+            <Typo
+              fontFamily="SF"
+              className="text-md text-lighter-grey font-semibold"
+            >
               Practice
             </Typo>
           ) : (
             <div>
-              <span className="text-md text-button-blue font-semibold">Practice</span>
-              <span className="text-md text-lighter-grey font-semibold"> / Create</span>
+              <span className="text-md text-button-blue font-semibold">
+                Practice
+              </span>
+              <span className="text-md text-lighter-grey font-semibold">
+                {" "}
+                / Create
+              </span>
             </div>
           )}
         </div>

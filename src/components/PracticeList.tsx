@@ -44,7 +44,10 @@ const PracticeList = () => {
         <tbody>
           {tableData.map((data) => {
             return (
-              <tr key={data.id} className={`${data.id % 2 === 0 && "bg-grey-data"}`}>
+              <tr
+                key={data.id}
+                className={`${data.id % 2 === 0 && "bg-grey-data"}`}
+              >
                 <td>
                   <Typo
                     fontFamily="OS"
@@ -90,7 +93,7 @@ const PracticeList = () => {
                     fontFamily="OS"
                     className="text-lighter-black text-sm py-3"
                   >
-                      <img src={Status} alt="Status" className="mx-auto" />
+                    <img src={Status} alt="Status" className="mx-auto" />
                   </Typo>
                 </td>
                 <td>
