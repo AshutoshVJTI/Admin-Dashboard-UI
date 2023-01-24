@@ -19,28 +19,30 @@ const FormTextfield = (props: FormTextfieldProps) => {
         {label}
         {isRequired && <span className="text-red-600"> *</span>}
       </Typo>
-      {isDropdown ? (
-        <select className="rounded-lg border border-textfield-input w-486 h-14 mb-6">
-          {dropdownOptions &&
-            dropdownOptions.map((option, index) => (
-              <option key={index} value={option}>
-                {option}
-              </option>
-            ))}
-        </select>
-      ) : (
-        <input
-          type="text"
-          className="rounded-lg border border-textfield-input w-486 h-14 mb-6"
-        />
-      )}
-      {hasSearchIcon && (
-        <img
-          src={Search}
-          alt="Search Icon"
-          className="ml-2 cursor-pointer"
-        />
-      )}
+      <div className="relative w-486 h-14 mb-6">
+        {isDropdown ? (
+          <select className="rounded-lg border border-textfield-input w-full h-full pl-10 pr-10">
+            {dropdownOptions &&
+              dropdownOptions.map((option, index) => (
+                <option key={index} value={option}>
+                  {option}
+                </option>
+              ))}
+          </select>
+        ) : (
+          <input
+            type="text"
+            className="rounded-lg border border-textfield-input w-full h-full pl-10 pr-10"
+          />
+        )}
+        {hasSearchIcon && (
+          <img
+            src={Search}
+            alt="Search Icon"
+            className="absolute right-3 top-4 cursor-pointer"
+          />
+        )}
+      </div>
     </div>
   );
 };
