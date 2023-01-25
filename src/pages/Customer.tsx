@@ -7,6 +7,7 @@ import Search from "../assets/practice/search.svg";
 import { useState } from "react";
 import Accordion from "../components/Accordion";
 import CreatePractice from "../components/CreatePractice";
+import Back from "../assets/practice/back.svg";
 
 interface CustomerProps {
   isOpen: boolean;
@@ -41,14 +42,24 @@ const Customer = (props: CustomerProps) => {
               Practice
             </Typo>
           ) : (
-            <div>
-              <span className="text-md text-button-blue font-semibold">
-                Practice
-              </span>
-              <span className="text-md text-lighter-grey font-semibold">
-                {" "}
-                / Create
-              </span>
+            <div className="flex gap-8">
+              <button
+                onClick={() => {
+                  setCurrentPage("List");
+                  setCurrentStep("BI");
+                }}
+              >
+                <img src={Back} alt="back" />
+              </button>
+              <div>
+                <span className="text-md text-button-blue font-semibold">
+                  Practice
+                </span>
+                <span className="text-md text-lighter-grey font-semibold">
+                  {" "}
+                  / Create
+                </span>
+              </div>
             </div>
           )}
         </div>
