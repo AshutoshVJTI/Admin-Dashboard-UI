@@ -18,8 +18,12 @@ module.exports = {
         'accordion-active': '#87CE83',
         'accordion-next': '#C9EAC8',
         'textfield-label': '#474747',
-        'textfield-input': '#C4C4C4'
+        'textfield-input': '#C4C4C4',
+        'sidebar-hover': '#DAEFFF'
       },
+    },
+    variants: {
+      fill: ['hover', 'focus'],
     },
     plugins: [],
   }

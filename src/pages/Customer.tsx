@@ -27,7 +27,7 @@ const Customer = (props: CustomerProps) => {
     <div
       className={`${
         isOpen ? "ml-60" : "ml-20"
-      } ease-in-out duration-200 mt-6 mb-7`}
+      } ease-in-out duration-200 pt-6 pb-7 bg-neutral-100`}
     >
       <div className="ml-7 mr-9">
         <div className="flex justify-between mb-4 items-center">
@@ -108,7 +108,7 @@ const Customer = (props: CustomerProps) => {
             />
           </div>
         )}
-        <div className="border border-grey-border rounded-lg">
+        <div className="border border-grey-border bg-white rounded-lg">
           {currentPage === "List" && <PracticeList />}
           {currentPage === "Create" && (
             <CreatePractice
