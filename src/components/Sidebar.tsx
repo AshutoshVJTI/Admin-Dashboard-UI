@@ -50,8 +50,8 @@ const Sidebar = (props: SidebarProps) => {
         <tr
           className={`cursor-pointer flex py-2 px-4 hover:fill-blue-400 ${
             isOpen &&
-            "hover:bg-sidebar-hover hover:text-blue-cyan hover:border-blue-cyan border-transparent border-l-4"
-          } bg-sidebar-hover text-blue-cyan border-l-4 border-blue-cyan transition-all`}
+            "border-blue-cyan border-l-4  bg-sidebar-hover hover:bg-sidebar-hover hover:text-blue-cyan hover:border-blue-cyan border-transparent border-l-4"
+          }  text-blue-cyan  transition-all`}
         >
           <td>
             <img src={Tab2} alt="Practice" className="mx-auto" />
